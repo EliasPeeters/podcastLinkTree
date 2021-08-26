@@ -1,0 +1,49 @@
+<html>  
+    <head>
+        <link href="<%= url %>/assets/css/podcastLinktree.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+        <title>Scharf Angebraten</title>
+    </head>
+
+    <body> 
+
+        <style>
+            @font-face {
+                font-family: beon;
+                src: url("<%= url %>/assets/fonts/beon-webfont.woff");
+            }
+
+            body {
+                background-image: url("<%= url %>/assets/images/Background\ High.jpg");
+            }
+
+        </style>
+
+        <div class="bodyWrapperWrapper">
+            <div class="bodyWrapper">
+                <img class="headingImage" src="<%= url %>/assets/images/Scharf Angebraten (Schrift).png">
+
+                <script>
+                    function openPage(url) {
+                        window.location.href = url
+                    }
+
+                </script>
+
+                <% data.forEach(function(element) { %>
+                    <button class="linkButton" onclick="openPage('<%= element.link %>')">
+                        <div class="fill type<%= element.type %>">
+                            <% if (element.image != undefined) { %>
+                                <img class="icon" src="<%= element.image %>">
+                            <% } %>
+                            <p><%= element.name %></p>
+                        </div>
+                    </button>
+                <% }) %>
+
+                <img class="bottomImage" src="<%= url %>/assets/images/Scharf Angebraten (Zeichnung).png">
+            </div>
+        </div>
+        
+    </body>
+</html>

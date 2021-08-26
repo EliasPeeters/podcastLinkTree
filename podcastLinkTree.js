@@ -1,13 +1,20 @@
 let express = require('express');
+let mysqlSetup = require('./mysqlSetup');
 let credentialsLoader = require('./getCredentials');
 
 app = express();
+credentials = credentialsLoader.getCredentials();
+connection = mysqlSetup.getConnection();
 
-app.get('/', (req, res) => {
-    res.send('Hello World');
+app.set('view engine', 'ejs');
+app.use('/assets', express.static('assets'))
+
+//routes 
+let treeRoute = require('./routes/tree');
+
+app.get('*', (req, res) => {
+    res.redirect('/tree')
 })
-
-console.log(credentialsLoader.getCredentials());
 
 let port = 8087;
 app.listen(port, () => {
