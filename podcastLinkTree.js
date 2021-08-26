@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 
 console.log(credentialsLoader.getCredentials());
 
-let port = 8085;
+let port = 8087;
 app.listen(port, () => {
     console.log(`Running on port ${port}`)
 })
