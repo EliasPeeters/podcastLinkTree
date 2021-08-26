@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: space-around; }
     body .bodyWrapperWrapper .bodyWrapper {
-      max-width: 800px; }
+      max-width: 600px; }
       body .bodyWrapperWrapper .bodyWrapper .headingImage {
         margin-top: 20px;
         width: 100%; }
@@ -17,8 +17,8 @@ body {
         margin-top: 50px; }
 
 .linkButton {
-  width: 80%;
-  margin-left: 10%;
+  width: 90%;
+  margin-left: 5%;
   height: 100px;
   border: white 2px solid;
   border-radius: 10px;

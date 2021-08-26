@@ -30,16 +30,16 @@
 
                 </script>
 
-                <% data.forEach(function(element) { %>
-                    <button class="linkButton" onclick="openPage('<%= element.link %>')">
-                        <div class="fill type<%= element.type %>">
-                            <% if (element.image != undefined) { %>
-                                <img class="icon" src="<%= element.image %>">
+                <% for (let element in data) { %>
+                    <button class="linkButton" onclick="openPage('/link/<%= element %>?id=<%= id %>')">
+                        <div class="fill type<%= data[element].type %>">
+                            <% if (data[element].image != undefined) { %>
+                                <img class="icon" src="<%= data[element].image %>">
                             <% } %>
-                            <p><%= element.name %></p>
+                            <p><%= data[element].name %></p>
                         </div>
                     </button>
-                <% }) %>
+                <% } %>
 
                 <img class="bottomImage" src="<%= url %>/assets/images/Scharf Angebraten (Zeichnung).jp2">
             </div>
