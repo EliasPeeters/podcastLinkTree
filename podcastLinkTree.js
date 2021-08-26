@@ -12,6 +12,10 @@ app.use('/assets', express.static('assets'))
 //routes 
 let treeRoute = require('./routes/tree');
 
+app.get('*', (req, res) => {
+    res.redirect('/tree')
+})
+
 let port = 8087;
 app.listen(port, () => {
     console.log(`Running on port ${port}`)
