@@ -48,6 +48,6 @@ let data = [
     }
 ]
 
-app.get('/tree', (req, res) => {
+app.get('/', (req, res) => {
     res.render('podcastLinkTree', {data: data, url: url});
 })

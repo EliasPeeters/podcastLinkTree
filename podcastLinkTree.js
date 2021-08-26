@@ -13,7 +13,7 @@ app.use('/assets', express.static('assets'))
 let treeRoute = require('./routes/tree');
 
 app.get('*', (req, res) => {
-    res.redirect('/tree')
+    res.redirect('/')
 })
 
 let port = 8087;
