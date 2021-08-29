@@ -1,0 +1,58 @@
+@font-face {
+    font-family: beon;
+    src: url("/assets/fonts/beon-webfont.woff");
+}
+
+body {
+    font-family: beon;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    background-image: url("/assets/images/Background\ High.jp2");
+
+    
+    .wrapperFlex {
+        display: flex;
+        justify-content: space-around;
+
+        .wrapper {
+            max-width: 600px;  
+            width: 100%;
+
+            h1 {
+                color: white;
+                text-align: center;
+            }
+
+            p {
+                color: white;
+            }
+
+            .element {
+                background-color: white;
+                border-radius: 10px;
+                width: 80%;
+                margin-bottom: 20px;
+                margin-left: 10%;
+                color: black;
+                padding: 10px;
+
+                p {
+                    color: black;
+                    margin: 8px;
+                }
+
+                .firstColomn {
+                    width: 50px;
+                }
+            }
+
+        }
+    }
+    
+
+    
+    
+    
+}
