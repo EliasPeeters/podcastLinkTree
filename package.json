@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass2": "node-sass ./sass -o ./assets/css/",
-    "start-local": "node podcastLinkTree.js",
-    "start-live": "git reset --hard; git pull; npm i; forever restart podcastLinkTree.js"
+    "start-local": "LOGGER=false node podcastLinkTree.js",
+    "start-live": "git reset --hard; git pull; npm i; LOGGER=true forever restart podcastLinkTree.js"
   },
   "repository": {
     "type": "git",
