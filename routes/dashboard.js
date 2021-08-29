@@ -20,8 +20,12 @@ app.get('/dashboard', async (req, res) => {
             data[element].log_dateTimeNew = data[element].log_dateTime.toString().substring(0, 25)
         }
 
+        let logger = false
+        if (process.env.LOGGER == 'true') {
+            logger = true;
+        } 
 
-        res.render('dashboard', {data, dataSorted})
+        res.render('dashboard', {data, dataSorted, logger})
     } else {
         res.redirect('/login')
     }

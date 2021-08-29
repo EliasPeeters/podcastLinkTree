@@ -23,6 +23,11 @@ app.get('*', (req, res) => {
     res.redirect('/')
 })
 
+if (process.env.LOGGER == 'true') {
+    console.log('Logger running')
+} else {
+    console.log('Logger not running')
+}
 
 let port = 8087;
 app.listen(port, () => {
