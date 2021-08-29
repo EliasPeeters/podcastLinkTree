@@ -25,7 +25,7 @@ app.get('/dashboard', async (req, res) => {
             logger = true;
         } 
 
-        res.render('dashboard', {data, dataSorted, logger})
+        res.render('dashboard', {data, dataSorted, logger: process.env.LOGGER})
     } else {
         res.redirect('/login')
     }
