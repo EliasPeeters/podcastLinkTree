@@ -1,20 +1,23 @@
 body {
   font-family: beon;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  margin: 0; }
-  body .bodyWrapperWrapper {
-    display: flex;
-    justify-content: space-around; }
-    body .bodyWrapperWrapper .bodyWrapper {
-      max-width: 600px; }
-      body .bodyWrapperWrapper .bodyWrapper .headingImage {
-        margin-top: 20px;
-        width: 100%; }
-      body .bodyWrapperWrapper .bodyWrapper .bottomImage {
-        width: 100%;
-        margin-top: 50px; }
+  background-color: #292761;
+  margin: 0;
+}
+body .bodyWrapperWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+body .bodyWrapperWrapper .bodyWrapper {
+  max-width: 600px;
+}
+body .bodyWrapperWrapper .bodyWrapper .headingImage {
+  margin-top: 20px;
+  width: 100%;
+}
+body .bodyWrapperWrapper .bodyWrapper .bottomImage {
+  width: 100%;
+  margin-top: 50px;
+}
 
 .linkButton {
   width: 90%;
@@ -27,27 +30,35 @@ body {
   overflow: hidden;
   background-color: transparent;
   padding: 0;
-  margin-top: 30px; }
-  .linkButton .fill {
-    background-color: white;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .linkButton .fill .icon {
-      width: 30px;
-      border-radius: 50%;
-      margin-right: 10px; }
-    .linkButton .fill p {
-      margin: 0;
-      font-family: beon;
-      color: #282867;
-      text-align: center;
-      font-size: 22px;
-      max-width: 80%; }
-    .linkButton .fill.type2 {
-      background-color: #282867;
-      background-color: transparent; }
-      .linkButton .fill.type2 p {
-        color: white; }
+  margin-top: 30px;
+}
+.linkButton .fill {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.linkButton .fill .icon {
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.linkButton .fill p {
+  margin: 0;
+  font-family: beon;
+  color: #282867;
+  text-align: center;
+  font-size: 22px;
+  max-width: 80%;
+}
+.linkButton .fill.type2 {
+  background-color: #282867;
+  background-color: transparent;
+}
+.linkButton .fill.type2 p {
+  color: white;
+}
+
+/*# sourceMappingURL=podcastLinkTree.css.map */

@@ -5,7 +5,7 @@
   "main": "podcastLinkTree.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass2": "node-sass ./sass -o ./assets/css/",
+    "sass2": "sass ./sass:./assets/css/",
     "start-local": "npm run sass2; LOGGER=false node podcastLinkTree.js",
     "start-live": "git reset --hard; git pull; npm i; npm run sass2; LOGGER=true forever restart podcastLinkTree.js"
   },
@@ -26,6 +26,7 @@
     "express": "^4.17.1",
     "mysql": "^2.18.1",
     "os": "^0.1.2",
+    "sass": "^1.43.4",
     "util2": "^1.0.1",
     "uuid": "^8.3.2"
   }
